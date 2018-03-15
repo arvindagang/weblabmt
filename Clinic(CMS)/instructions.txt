@@ -1,0 +1,34 @@
+•Cloning the wordpress
+
+1. Clone the repository
+	Files:
+	-wordpress
+	-webtechmt.sql
+
+2. Copy wordpress from the local repository to C:\wamp64\www
+
+3. In phpmyadmin
+	create a database named "webtechmt"
+	click the tab of the database then click import
+	choose the file of the database (webtechmt.sql)
+
+4. Open browser and go to localhost/wordpress/wp-login
+	-input the necessary username and password
+
+**------------------------**
+
+pushing changes from wordpress
+1. Copy wordpress from C:\wamp64\www to your local repository "weblabmt"
+*if there are changes like users that will affect the data base
+	*export the database 
+	*copy the database to your local repository
+
+2. push the necessary changes to our repository using git bash or git windows
+ *git add .
+ *git commit -m "message"
+ *git push
+
+**---------------------**
+if magpull ulit, para makita changes ng ibang nagedit,
+1. git pull
+2. copy wordpress folder to C:\wamp64\www
