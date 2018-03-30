@@ -1,3 +1,5 @@
->The Medical Clinic treats common illnesses such as Flu, Cough anf Cold, Allergies, Rashes, Sore-eyes, Headaches, Sprains, and many more minor illnesses.
->The School Physiscian provides free consultation to the students and faculties on simple medical cases, they also give medication for the relief of what they are feeling. 
+>The Medical Clinic treats common illnesses such as Flu, Cough anf Cold, Allergies, Rashes, Sore-eyes, Headaches, Sprains, 
+and many more minor illnesses.
+>The School Physiscian provides free consultation to the students and faculties 
+on simple medical cases, they also give medication for the relief of what they are feeling. 
 	If the case becomes complicated the Physician sugguests that the individual must see his or her doctor immdediately.
