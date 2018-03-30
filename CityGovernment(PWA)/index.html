@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/style.css" type="text/css">
+		<script src="scripts/map.js" type="text/javascript"></script>
+		<script src="scripts/action.js" type="text/javascript"></script>
+	</head>
+		
+	<body id="bodyskin">
+		<header>
+			<button onClick="showElec()" id="buttonElec">Electric</button>
+			<button onClick="showWate()" id="buttonWate">Water</button>
+			<button onclick="showCabl()" id="buttonCabl">Cable</button>
+			<button onclick="showInte()" id="buttonInte">Internet</button>
+			<button onclick="showGvnt()" id="buttonGvnt">Government</button>
+			<button onclick="showOptn()" id="button">Other</button>
+		</header>
+		<div id="mapElec"></div>
+		<div id="mapWate"></div>
+		<div id="mapCabl"></div>
+		<div id="mapInte"></div>
+		<div id="mapGvnt"></div>
+		<div id="welcome"></div>
+		<div id="option">
+			<div id="reminder"></div>
+			<div id="howto"></div>
+			<div id="help"></div>
+			<div id=""></div>
+		</div>
+		
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFSuh4RtWXR-QrOoFWpE6lttcM9We2eyk&callback=initMap">
+		</script>
+	</body>
+</html>
