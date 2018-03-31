@@ -1,10 +1,21 @@
 Other additional phrases. Please check sentences inside the paretheses:)
 
-(The Medical and Dental clinic of Saint Louis University Maryheights Campus provides efficient and quality mdical care services to students and faculties ) of the School of Accountancy and Business Management(SABM) 
-as well as the School of Computer and Information Sciences(SCIS). 
+(The Medical and Dental clinic of Saint Louis University 
+Maryheights Campus provides efficient 
+and quality mdical care services to students 
+and faculties ) of the School of Accountancy and 
+Business Management(SABM) 
+as well as the School of Computer and Information 
+Sciences(SCIS). 
 
 
 
-Students and faculties are working together to make the campus an educational and friendly environment as much as possible. //needed ba to?
+Students and faculties are working together to make 
+the campus an educational and friendly environment 
+as much as possible. //needed ba to?
 
-With the help of both medical and dental clinic they create a safer (and healthier) environment for the students (and faculties) , having the appropriate facilities, equipment, and treatment for the students who would feel any medical problems.
+With the help of both medical and dental clinic 
+they create a safer (and healthier) environment 
+for the students (and faculties) , having the 
+appropriate facilities, equipment, and treatment 
+for the students who would feel any medical problems.
