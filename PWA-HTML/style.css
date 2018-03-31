@@ -1,0 +1,34 @@
+#top{
+    background-color: lightgreen;
+    color: white;
+    text-align: center;
+    height: 50px;
+    font-size: 35px;
+    height: 150px;
+}
+
+#title{
+    align-content: center;
+}
+
+.Utilities input{
+    display: none;
+}
+
+#util-block{
+    padding-top: 50px;
+}
+
+.Utilities label{
+    background-color: lightblue;
+    border: navy solid;
+    align-content: center;
+    font: bold 20px verdana;
+    border-radius: 20px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+
