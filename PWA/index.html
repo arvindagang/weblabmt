@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name = "viewpost" content="width=device-width; maximum-scale=1">
+    <title></title>
+    <link href="navbar.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a class="logo">LOGO</a>
+                <button class="nav-icon">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="memo.html">Memo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+<script type="text/javascript">
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js").then(function (registration) {
+            console.log("yayyy");
+        }).catch(function (error) {
+            console.log("Noooo", error);
+        })
+    }
+</script>
+
+</html>

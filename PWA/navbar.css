@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    background: #efefef;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    box-shadow: -2px -7px 47px 9px rgba(0,0,0,0.35);
+    -moz-box-shadow: -2px -7px 47px 9px rgba(0,0,0,0.35);
+    -webkit-box-shadow: -2px -7px 47px 9px rgba(0,0,0,0.35);
+}
+nav ul li a{
+    position: relative;
+    color: #000;
+    transition: linear 0.1s;
+
+}
+
+li > a:hover{
+    border-bottom: 4px solid black;
+
+}
+
+.logo{
+    float: left;
+    padding: 18px;
+}
+
+.nav-icon{
+    float: right;
+    background: #efefef;
+    color : black;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+nav a{
+    text-decoration: none;
+    color: #282828;
+    font-size: 20px;
+    padding: 5px;
+}
+
+nav ul{
+    overflow:hidden;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
+nav ul li{
+    float: right;
+    display: inline-block;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+    .logo{
+        float:none;
+        text-align: center;
+    }
+    nav ul{
+        background: #ffffff;
+        max-height: 0;
+        width: 100%
+    }
+
+    nav ul.show{
+        max-height: 20em;
+    }
+
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .nav-icon{
+        display: inline;
+    }
+}
