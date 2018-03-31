@@ -8,12 +8,28 @@
 		
 	<body id="bodyskin">
 		<header>
-			<button onClick="showElec()" id="buttonElec">Electric</button>
-			<button onClick="showWate()" id="buttonWate">Water</button>
-			<button onclick="showCabl()" id="buttonCabl">Cable</button>
-			<button onclick="showInte()" id="buttonInte">Internet</button>
-			<button onclick="showGvnt()" id="buttonGvnt">Government</button>
-			<button onclick="showOptn()" id="button">Other</button>
+			<!--<input type = "checkbox" onclick="showOptn()" id="button" />-->
+            <div class="check" id="elec">
+                <input type = "checkbox" onClick="showElec()" id="buttonElec" checked/>                
+                <label for="buttonElec"><img src="icons\elec.png" width="50" height="50"></label>
+            </div>         
+            <div class="check" id="water">
+                <input type = "checkbox" onClick="showWate()" id="buttonWate" />                   
+                <label for="buttonWate"><img src="icons\water.png" width="50" height="50"></label>
+            </div>
+            <div class="check" id="cable">   
+                <input type = "checkbox" onclick="showCabl()" id="buttonCabl" />                
+                <label for="buttonCabl"><img src="icons\tv.png" width="50" height="50"></label>
+            </div>
+            <div class="check" id="net">
+                <input type = "checkbox" onclick="showInte()" id="buttonInte" />                
+                <label for="buttonInte"><img src="icons\net.png" width="50" height="50"></label>
+            </div>
+                <div class="check" id="post">
+                <input type = "checkbox" onclick="showGvnt()" id="buttonGvnt" />                
+                <label for="buttonGvnt"><img src="icons\post.png" width="50" height="50"></label>
+            </div>
+                <!--<label for="input">XXXL</label>-->
 		</header>
 		<div id="mapElec"></div>
 		<div id="mapWate"></div>

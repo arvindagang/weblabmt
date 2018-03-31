@@ -30,5 +30,13 @@
     padding-top: 10px;
     
 }
+#bottom{
+    background-color: lightgreen;
+    color: white;
+    height: 500px;
+}
+#googleMap{
+    padding-left: 10px;
+}
 
 

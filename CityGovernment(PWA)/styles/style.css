@@ -1,5 +1,5 @@
 header {
-	background-color:black;
+	background-color:green;
 	height:150px;
 	width:100%;
 	position:absolute;
@@ -17,7 +17,30 @@ p {
 #bodyskin {
 	background-color:orange;
 }
-
+label {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border: 1px solid #ddd;
+  line-height: 50px;
+  cursor: pointer;
+  object-position: center;    
+  margin-top: 30px;    
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 30px;
+  background-color: peachpuff;
+  border-color: white;
+  border-width: thin;    
+}
+img {
+    padding: 20%;
+}
+input{
+    display: none;
+}
 #menu {
 	margin-top:200px;
 	display:block;
@@ -69,8 +92,21 @@ p {
 	display:block;
 	
 }
+#buttonElec:checked ~ label[for="buttonElec"],
+#buttonWate:checked ~ label[for="buttonWate"],
+#buttonCabl:checked ~ label[for="buttonCabl"],
+#buttonInte:checked ~ label[for="buttonInte"],
+#buttonGvnt:checked ~ label[for="buttonGvnt"] {
+  background: #999;
+  color: black;
+}
+.check {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
 
-#button {
+/*#button {
 	background-color: orange;
     border: none;
     color: white;
@@ -205,4 +241,4 @@ p {
 #buttonGvnt:hover {
 	background-color:white;
 	color:Black;
-}
+}*/
