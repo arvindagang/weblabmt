@@ -9,6 +9,13 @@ header {
 	opacity:0.9;
 
 }
+
+
+img {
+	float:left:
+}
+
+/** asda **/
 p {
 	
 	font-size:30px;
@@ -242,3 +249,39 @@ input{
 	background-color:white;
 	color:Black;
 }*/
+
+#option{
+	
+	position:absolute;
+	width:150px;
+	height:150px;
+	margin-left:1000px;
+	margin-bottom:150px;
+}
+
+#h1elec{
+	padding-left:20px;
+	padding-top:10px;
+	color: white;
+	background-color:#F6D155;
+	width:270px;
+	height:40px;
+}
+
+#h1wate{
+	padding-left:20px;
+	padding-top:10px;
+	color: white;
+	background-color:#6F9FD8;
+	width:270px;
+	height:40px;
+}
+
+#h1cabl {
+	padding-left:20px;
+	padding-top:10px;
+	color: white;
+	background-color:#3e4444;
+	width:270px;
+	height:40px;
+}
