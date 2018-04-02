@@ -31,8 +31,8 @@ function showWate(){
 	document.getElementById("mapElec").style.width = "0px";
 	document.getElementById("option").style.width = "0px";
 	document.getElementById("option").style.height = "0px";
-	document.getElementById("bodyskin").style.backgroundColor = "violet";
-	document.getElementById("buttonWate").style.backgroundColor = "violet";
+	document.getElementById("bodyskin").style.backgroundColor = "#6F9FD8";
+	document.getElementById("buttonWate").style.backgroundColor = "#6F9FD8";
 	document.getElementById("buttonElec").style.backgroundColor = "orange";
 	document.getElementById("buttonCabl").style.backgroundColor = "orange";
 	document.getElementById("buttonInte").style.backgroundColor = "orange";
@@ -52,8 +52,8 @@ function showCabl(){
 	document.getElementById("mapElec").style.width = "0px";
 	document.getElementById("option").style.width = "0px";
 	document.getElementById("option").style.height = "0px";
-	document.getElementById("bodyskin").style.backgroundColor = "cyan";
-	document.getElementById("buttonCabl").style.backgroundColor = "cyan";
+	document.getElementById("bodyskin").style.backgroundColor = "#3e4444";
+	document.getElementById("buttonCabl").style.backgroundColor = "#3e4444";
 	document.getElementById("buttonWate").style.backgroundColor = "orange";
 	document.getElementById("buttonElec").style.backgroundColor = "orange";
 	document.getElementById("buttonInte").style.backgroundColor = "orange";
