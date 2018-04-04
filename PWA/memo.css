@@ -77,7 +77,7 @@ header button {
   ul.list li {
     width: 90%;
     min-height: 50px;
-    margin: 20px auto;
+
     font-size: 14px;
     font-weight: 500;
     color: #444;
@@ -193,11 +193,23 @@ header button {
     margin: 0 0 0 -75px;
   }
   
-  
-  ul.list#paid:empty:after {
+  ul.list#unpaid:empty::after{
     content: 'You have nothing to pay';
   }
+
+  ul.list#paid:empty:after {
+    content: 'You have not paid anything';
+  }
   
+  
+
+  ul.list#unpaid:after {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #aaa;
+  }
 
   ul.list#paid:after {
     width: 100%;
