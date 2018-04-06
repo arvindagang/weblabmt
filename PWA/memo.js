@@ -41,7 +41,7 @@ function addItemList(text) {
 
     var remove = document.createElement('button');
     remove.classList.add('remove');
-    remove.innerHTML = trash;
+    remove.innerHTML = "<button> Paid </button>"
 
     remove.addEventListener('click', removeItem);
 
