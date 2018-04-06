@@ -3,12 +3,10 @@ document.getElementById('add').addEventListener('click', function () {
     var amount = document.getElementById('amount').value;
     var dueDate = document.getElementById('dueDate').value;
     var org = document.getElementById('org').value;
-
-
     if (amount, dueDate, org) addItemList(amount, dueDate, org);
 });
 
-function removeItem(remove) {
+function removeItem() {
     var item = this.parentNode.parentNode;
     var parent = item.parentNode;
     var id = parent.id;
@@ -19,14 +17,24 @@ function removeItem(remove) {
 
 
 function addItemList(amount, dueDate, org){
+    
+    var currentDay = new Date();
     var d = new Date(dueDate);
     var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     var mm = months[d.getUTCMonth()];
     var list = document.getElementById('unpaid');
     var item = document.createElement('li');
     item.innerHTML = mm +" "+ d.getUTCDate() + ", "+ d.getUTCFullYear()+" - "+ org + "<br> "+"Amount: " + amount;
-
-
+    var due = d.getUTCDate() - currentDay.getUTCDate();
+    console.log(due);
+    if(due <= 7 && due > 0){
+        alert(due);
+    }else if(due === 0){
+        alert("You need to pay now");
+    }else if(due < 0){
+        alert("You are overdue");
+    }
+    
     var buttons = document.createElement('div');
     buttons.classList.add('buttons');
     var remove = document.createElement('button');
