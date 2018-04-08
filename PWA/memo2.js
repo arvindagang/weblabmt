@@ -1,31 +1,91 @@
-var check = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22;" xml:space="preserve"><rect y="0" class="noFill" width="22" height="22"/><g><path class="fill" d="M9.7,14.4L9.7,14.4c-0.2,0-0.4-0.1-0.5-0.2l-2.7-2.7c-0.3-0.3-0.3-0.8,0-1.1s0.8-0.3,1.1,0l2.1,2.1l4.8-4.8c0.3-0.3,0.8-0.3,1.1,0s0.3,0.8,0,1.1l-5.3,5.3C10.1,14.3,9.9,14.4,9.7,14.4z"/></g></svg>';
+var memo = [];  
+getMemo();
+/**
+ * Method will get the data that is available inside the local storage
+ */
+function getMemo() {
+    memo = JSON.parse(localStorage.getItem('memo'));
+    if (memo) {
+        for (var i = 0; i < memo.length; i++) {
+            var amount = memo[i].amount;
+            var dueDate = memo[i].dueDate;
+            var org = memo[i].org;
+            addItemList(amount, dueDate, org);
+        }
+    } else {
+        memo = [];
+    }
+}
+
+
+
+/**
+ * Store data in the localStorage whenever a new information is send by the user
+ */
 document.getElementById('add').addEventListener('click', function () {
     var amount = document.getElementById('amount').value;
     var dueDate = document.getElementById('dueDate').value;
     var org = document.getElementById('org').value;
 
+    data = {
+        amount: amount,
+        dueDate: dueDate,
+        org: org
+    }
+    memo.push(data);
+    localStorage.setItem('memo', JSON.stringify(memo));
 
     if (amount, dueDate, org) addItemList(amount, dueDate, org);
 });
 
-function removeItem(remove) {
+/**
+ * 
+ * @param {*} remove 
+ * Remove a certain item list from the localStorage
+ */
+function removeItem() {
     var item = this.parentNode.parentNode;
     var parent = item.parentNode;
     var id = parent.id;
     var value = item.innerHTML;
-
+    var a = item + 1;
+    memo.splice(a,1);
+    localStorage.setItem('memo', JSON.stringify(memo));
     parent.removeChild(item);
 }
 
 
-function addItemList(amount, dueDate, org){
+
+/**
+ * Add items
+ * @param {*} amount 
+ * @param {*} dueDate 
+ * @param {*} org 
+ */
+function addItemList(amount, dueDate, org) {
+    var currentDay = new Date();
     var d = new Date(dueDate);
     var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     var mm = months[d.getUTCMonth()];
     var list = document.getElementById('unpaid');
     var item = document.createElement('li');
-    item.innerHTML = mm +" "+ d.getUTCDate() + ", "+ d.getUTCFullYear()+" - "+ org + "<br> "+"Amount: " + amount;
+    item.innerHTML = mm + " " + d.getUTCDate() + ", " + d.getUTCFullYear() + " - " + org + "<br> " + "Amount: " + amount;
+    var due = d.getUTCDate() - currentDay.getUTCDate();
+    var remind = document.createElement('div');
 
+
+    if(due <= 7 && due > 0){
+        remind.innerHTML = "<p> You have " + due + " days left </p>";
+        item.appendChild(remind);
+    }else if(due === 0){
+        remind.innerHTML = "<p> You need to pay now </p>";
+        item.appendChild(remind);
+    }else if(due < 0){
+        remind.innerHTML = "<p> You are overdue </p>";
+        item.appendChild(remind);
+    }
+    
+    
 
     var buttons = document.createElement('div');
     buttons.classList.add('buttons');
@@ -40,4 +100,5 @@ function addItemList(amount, dueDate, org){
 
     list.appendChild(item);
     list.insertBefore(item, list.childNodes[0]);
+
 }
