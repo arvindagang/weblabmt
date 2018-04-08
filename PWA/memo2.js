@@ -69,7 +69,7 @@ function addItemList(amount, dueDate, org) {
     var mm = months[d.getUTCMonth()];
     var list = document.getElementById('unpaid');
     var item = document.createElement('li');
-    item.innerHTML = mm + " " + d.getUTCDate() + ", " + d.getUTCFullYear() + " - " + org + "<br> " + "Amount: " + amount;
+    item.innerHTML ="Due Date: " + mm + " " + d.getUTCDate() + ", " + d.getUTCFullYear() + " <br>Type: " + org + "<br> " + "Amount: " + amount;
     var due = d.getUTCDate() - currentDay.getUTCDate();
     var remind = document.createElement('div');
 
@@ -91,7 +91,7 @@ function addItemList(amount, dueDate, org) {
     buttons.classList.add('buttons');
     var remove = document.createElement('button');
     remove.classList.add('remove');
-    remove.innerHTML = "<button> Paid </button>";
+    remove.innerHTML = "Paid";
 
     remove.addEventListener('click', removeItem);
     buttons.appendChild(remove);
