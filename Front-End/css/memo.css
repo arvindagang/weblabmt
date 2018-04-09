@@ -7,20 +7,16 @@ body{
     background-color: #f4f4f4;
 }
 
-
+a{
+    text-decoration: none;
+    color: white;
+}
 .container{
     width: 80%;
     margin: auto;
     overflow: hidden;
     align-content: center;
 }
-
-.container form{
-    width: 50%;
-    margin: 0 auto;
-    align-content: center;
-}
-
 
 header{
     background: #35424a;
@@ -30,45 +26,15 @@ header{
     border-bottom: orange 3px solid;
 }
 
-header a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+
+#memo{
+    text-align: center;
 }
 
-ul{
-    margin: 0px;
-    padding: 0px;
-}
-
-header li{
-    float: left;
-    display: inline;
-    padding: 0px 20px 0px 20px;
-}
-
-#title{
-    float:left;
-}
-
-nav{
-    float:right;
-    margin-top: 10px;
-}
 
 #title h1{
     margin: 0;
     padding: 0;
-}
-
-
-#map{
-    min-height: 300px;
-    height: 350px;
-    background-color: darkgray;
-    text-align: center;
-    color: white;
 }
 
 #border{
@@ -76,28 +42,59 @@ nav{
     background: #35424a;
 }
 
+section{
+    background: #35424a;
+    border-bottom: orange 3px solid;
+}
+
+#add-dues{
+   background: white;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+#dues{
+   background: white;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
 button{
     text-transform: uppercase;
     height: 50px;
-    width: 128px;
+    width: 95%;
     margin: 10px;
-    float: left;
     border-radius: 15px;
     text-align: center;
     align-content: center;
 }
 
-.map-box {
-    width: 50%;
-    margin: 0 auto;
-    height: 100%;
+ul{
+    list-style-type: none;
+    padding-left: 0;
 }
 
+input{
+    width: 50%;
+    height: 30px;
+}
 button:hover{
     border: 3px orange solid;
     background-color: gray;
 }
-
+select{
+    height: 30px;
+}
+label{
+    color: orange;
+/*    text-align: left;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    
+}
 
 .box{
     float: left;
@@ -113,6 +110,7 @@ footer{
     color: white;
     height: 50px;
     padding: 10px;
+    vertical-align: bottom;
 }
 
 @media(max-width: 768px){
@@ -123,16 +121,22 @@ footer{
     }
     button{
         display: block;
-        width:100%;
+        width:94%;
     }
     .box{
         align-content: center;
         float: none;
-        width: 95%;
+        width: 97%;
         margin: 1px;
     }
+/*
     .container form{
         width: 90%;   
+    }
+    
+*/
+    input{
+    width: 98%;
     }
 }
 

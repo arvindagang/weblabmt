@@ -16,9 +16,9 @@ body{
 }
 
 .container form{
-    width: 80%;
-    margin: auto;
-   align-content: center;
+    width: 50%;
+    margin: 0 auto;
+    align-content: center;
 }
 
 
@@ -65,6 +65,7 @@ nav{
 
 #map{
     min-height: 300px;
+    height: 350px;
     background-color: darkgray;
     text-align: center;
     color: white;
@@ -78,12 +79,18 @@ nav{
 button{
     text-transform: uppercase;
     height: 50px;
-    width: 125px;
+    width: 128px;
     margin: 10px;
     float: left;
     border-radius: 15px;
     text-align: center;
     align-content: center;
+}
+
+.map-box {
+    width: 50%;
+    margin: 0 auto;
+    height: 100%;
 }
 
 button:hover{
@@ -123,6 +130,9 @@ footer{
         float: none;
         width: 95%;
         margin: 1px;
+    }
+    .container form{
+        width: 90%;   
     }
 }
 
