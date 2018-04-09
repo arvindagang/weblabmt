@@ -5,55 +5,11 @@
     <title>Reminder</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="css/memo.css">
+<!--    <link rel="stylesheet" type="text/css" href="css/memo.css">-->
 </head>
 
 <body>
-    <header>
-        <div class="container">
-           
-            <div id="memo">
-                <h1><a href="">Title</a></h1>
-                <h1>MyDues</h1>    
-            </div>
-        </div>    
-    </header>
-      
-    
-    <section>
-        <div class="container">
-           <div id="add-dues">
-                <form  onSubmit = "return false;">
-                            <label for = "amount">Amount (Php)</label><br>
-                            <input type = "number" min = "1" step = "any " id = "amount" required><br>
-                            <label for = "org">Type</label><br>
-                            <select id = "org">
-                                <option value = "Beneco">Beneco</option>
-                                <option value = "Internet">Internet</option>
-                                <option value = "BWD">BWD</option>
-                                <option value = "Cellphone">Cellphone</option>
-                                <option value = "Signal">Signal</option>
-                            </select><br>
-                            <label for = "dueDate">Due Date</label><br>
-                            <input type = "date"/ id = "dueDate" required><br>
-                            <button id = "add">Add</button>
-                </form>
-           </div>
-        </div>
-    </section>
 
-    <section>
-        <div class="container">
-           <div id="dues">
-               
-            <ul class="list" id = "unpaid">
-            </ul>
-           </div>
-        </div>
-    </section>
-
- 
-    <script src = "script/memo.js"></script>
 </body>
 
 </html>

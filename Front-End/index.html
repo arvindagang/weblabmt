@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link type="text/css" rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="script/script.js"></script>
     </head>
     
     <body>
@@ -21,47 +22,63 @@
             </div>
         </header>
         <section id="map">
-            <div class="contatiner">
-               <div class="map-box">    
-               Map here
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem eos modi eveniet nemo, inventore ipsa fugit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem eos modi eveniet nemo, inventore ipsa fugit </p>
+            <div class="container">
+               <div class="map-box">   
+                  <img id="map1" src="images/Beneco-1.jpg">
+                  <img id="map2" src="images/Beneco-2.jpg">
                </div>
             </div>
         </section>
         
         <section id="border">
             <div class="container">
-                <form action="#">
-                    <button type="submit" class="button_1">Electricity</button>
-                    <button type="submit" class="button_1">Water</button>
-                    <button type="submit" class="button_1">Internet Provider</button>
-                    <button type="submit" class="button_1">Load</button>
-<!--                    <button type="submit" class="button_1">Load</button>-->
+                <form>
+                       <input type="radio" name="util" id="util-1" onclick="showelec();">
+                        <label for="util-1">
+                            Electricity
+                        </label>
+                        <input type="radio" name="util" id="util-2"
+                        onclick="showwater();">
+                        <label for="util-2">
+                            Water
+                        </label>
+                        <input type="radio" name="util" value="Electricity" id="util-3">
+                        <label for="util-3">
+                            Internet
+                        </label>
                 </form>
             </div>
         </section>
         
         <section id="address">
            <div class="container">
-                <div class="box">
-                    <h3>Address #1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quaerat est explicabo quibusdam officiis rem distinctio quia vitae, sequi consectetur.</p>
+                <div id="elec1" class="box">
+                    <h2>Benguet Electric Cooperative Baguio</h2>
+                    <h3>2600, South Dr, Camp John Hay, Baguio, Benguet</h3>
+                    <h4>
+                    Open Monday - Saturday 8:00AM - 5:00PM    
+                    </h4>
+                    <button onclick="showmap1();">See Map</button>
                 </div>
-                <div class="box">
-                    <h3>Address #2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quaerat est explicabo quibusdam officiis rem distinctio quia vitae, sequi consectetur.</p>
+                <div id="elec2" class="box">
+                    <h2>Porta Vaga Mall</h2>
+                    <h3>Porta Vaga, Session Rd, Baguio, 2600 Benguet</h3>
+                    <h4>Open Monday - Sunday 9:00AM - 8:30PM</h4>
+                    <button onclick="showmap2();">See Map</button>
                 </div>
-                <div class="box">
+                <div id="water1" class="box">
                     <h3>Address #3</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quaerat est explicabo quibusdam officiis rem distinctio quia vitae, sequi consectetur.</p>
+                    <button>See Map</button>
                 </div>
-                <div class="box">
+                <div id="water2" class="box">
                     <h3>Address #4</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quaerat est explicabo quibusdam officiis rem distinctio quia vitae, sequi consectetur.</p>
+                    <button>See Map</button>
                 </div>
            </div>
-        </section>   
-            
+        </section>
+
         <footer>
             <p>Group1 9364B S.Y2017-2018</p>
         </footer>
