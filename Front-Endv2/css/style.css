@@ -1,0 +1,284 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f4;
+}
+
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    align-content: center;
+}
+
+.container form{
+    width: 50%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+
+header{
+    background: #35424a;
+    color: white;
+    padding-top: 30px;
+    min-height: 50px;
+    border-bottom: orange 3px solid;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+
+header a:hover{
+    text-shadow: 2px 2px 4px orange;
+    font-size: 21px;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0px 20px 0px 20px;
+}
+
+
+#title{
+    float:left;
+}
+
+nav{
+    float:right;
+    margin-top: 10px;
+}
+
+#title h1{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    float: right;
+    
+}
+
+#map{
+    height: 490px;
+    background-color: darkgray;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+#border{
+    padding: 15px;
+    background: #35424a;
+    padding-left: 16px;
+    
+}
+
+label{
+    text-transform: uppercase;
+    height: 40px;
+    width: 172px;
+    margin: 10px;
+    float: left;
+    border-radius: 15px;
+    border: 3px solid;
+    text-align: center;
+    align-content: center;
+    background: white;
+    padding-top: 15px;
+    
+}
+
+input{
+    display: none;
+}
+
+
+.map-box {
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+img{
+    padding-top: 10px;
+    width: 615px;
+}
+
+label:hover{
+    border: 3px orange solid;
+    background-color: gray;
+}
+
+
+.box{
+    float: left;
+    width: 45%;
+    display: none;
+    border: 3px black solid;
+    margin: 2px;
+}
+
+
+footer{
+    background: orange;
+    text-align: center;
+    color: white;
+    height: 50px;
+    padding: 10px;
+}
+
+@media(max-width: 768px){
+    header #title, nav, nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    label{
+        display: block;
+        width: 100%;
+        height: 25px;
+        padding-top: 5px;
+    }
+    .box{
+        align-content: center;
+        float: none;
+        width: 95%;
+        margin: 1px;
+    }
+    .container form{
+        width: 90%;   
+    }
+    img{
+/*        padding-top: 50px;*/
+        width: 250px;
+        margin: 0;
+    }
+    
+    button{
+        float: none;
+        width: 100%;
+    }
+    
+    #map .container{
+        margin: 0px;
+        padding: 0px;
+        width: 95%;
+        
+    }
+    
+    #map{
+        margin: 0px;
+        height: 210px;
+        padding: 0px;
+/*        padding-right: 30px;/ */
+/*        padding: 0px;*/
+        
+    }
+
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+#slideSection {
+	width:100%;
+	height:600px;
+	background-color:blue;
+}
+
+
+#mapPane {
+	width:60%;
+	height:600px;
+	background-color:white;
+	position:absolute;
+}
+
+#addressPane {
+	width:40%;
+	height:600px;
+	margin-left:60%;
+	background-color:white;
+	display:inline-block;
+	position:absolute;
+}
+
+#slideSection1 {
+	width:100%;
+	height:600px;
+	background-color:yellow;
+	display:none;
+}
+
+#slideSection2 {
+	width:100%;
+	height:600px;
+	background-color:yellow;
+	display:none;
+}
+
+#slideSection3{
+	width:100%;
+	height:600px;
+	background-color:yellow;
+	display:none;
+}
+
+#imageSlide{
+	width:80%;
+	height:100%;
+	position:absolute;
+	top:-8px;
+	left:10%;
+}
+
+#buttonPrev{
+	position:absoulte;
+	width:10%;
+	height:100%;
+	float:left;
+	color:white;
+	background-color:black;
+	opacity:0.7;
+}
+
+#buttonNext{
+	position:absoulte;
+	width:10%;
+	height:100%;
+	float:right;
+	color:white;
+	background-color:black;
+	opacity:0.7;
+}
+
+#buttonPrev:hover{
+	opacity:0.9;
+}
+
+#buttonNext:hover{
+	opacity:0.9;
+}
+
+
+
+
+
+
