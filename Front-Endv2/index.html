@@ -362,13 +362,14 @@
         <footer>
             <p>Group1 9364B S.Y2017-2018</p>
         </footer>
-		<script href="https://cdn.rawgit.com/arvindagang/weblabmt/9c88a13fe1575a932fabdd531d1fdfb0f027a1fa/Front-Endv2/sw.js"></script>
+		<script href="script/script.js"></script>
         <script>
+            
             (function() {
 				'use strict';
 				
 				if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('sw.js').then(function(reg) {
+                navigator.serviceWorker.register('https://cdn.rawgit.com/arvindagang/weblabmt/9c88a13fe1575a932fabdd531d1fdfb0f027a1fa/Front-Endv2/sw.js').then(function(reg) {
                     console.log('Nice!');
                 }).catch(function(err) {
                     console.log('dafuq ayaw!');
