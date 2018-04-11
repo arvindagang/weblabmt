@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link type="text/css" rel="stylesheet" href="css/style.css">
-		<link type="manifest" href="https://cdn.rawgit.com/arvindagang/weblabmt/9c88a13fe1575a932fabdd531d1fdfb0f027a1fa/Front-Endv2/manifest.json">
+		<link type="manifest" href="manifest.json">
     </head>
     
     <body>
@@ -369,7 +369,7 @@
 				'use strict';
 				
 				if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('https://cdn.rawgit.com/arvindagang/weblabmt/9c88a13fe1575a932fabdd531d1fdfb0f027a1fa/Front-Endv2/sw.js').then(function(reg) {
+                navigator.serviceWorker.register('sw.js').then(function(reg) {
                     console.log('Nice!');
                 }).catch(function(err) {
                     console.log('dafuq ayaw!');
