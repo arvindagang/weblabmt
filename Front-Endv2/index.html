@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>City Utilities-Welcome</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-		<meta name="viewport" content="width=500, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link type="text/css" rel="stylesheet" href="css/style.css">
+		<link type="manifest" href="manifest.json">
     </head>
     
     <body>
@@ -21,7 +21,7 @@
                 </nav>
             </div>
         </header>
-        <section id="map">
+        <!-- <section id="map">
             <div class="container">
                <div class="map-box">   
                   <img id="map1" src="images/Beneco-1.jpg">
@@ -29,7 +29,7 @@
                </div>
             </div>
         </section>
-        
+        -->
         <section id="border">
             <div class="container">
                 <form>
@@ -362,7 +362,20 @@
         <footer>
             <p>Group1 9364B S.Y2017-2018</p>
         </footer>
-		<script type="text/javascript" src="script/script.js"></script>
+		<script src="script/script.js"></script>
+        <script>
+            (function() {
+				'use strict';
+				
+				if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js').then(function(reg) {
+                    console.log('Nice!');
+                }).catch(function(err) {
+                    console.log('dafuq ayaw!');
+                });
+            }
+			})();
+        </script>
     </body>
 </html>
 
