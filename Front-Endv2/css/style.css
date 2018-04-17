@@ -43,6 +43,7 @@ header a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
+    text-shadow: -1px 0 orange, 0 1px orange, 1px 0 orange, 0 -1px orange;
     
 }
 
@@ -67,6 +68,14 @@ header li{
     float:left;
 }
 
+#title:hover{
+    color: orange;
+}
+
+#title:hover span{
+    color: white;
+}
+
 nav{
     float:right;
     margin-top: 10px;
@@ -82,12 +91,29 @@ form button{
     
 }
 
-#map{
-    height: 490px;
+#content{
+    height: 452px;
     background-color: darkgray;
+/*    text-align: center;*/
+    color: white;
+    border-bottom: orange 3px solid;
+/*    display: none;*/
+}
+#map{
+    text-align: center;
+    float: left;
+    border-right: orange 3px solid;
+    width: 52%;
+}
+
+#info{
+/*    background-color: #35424a;*/
+    width: 46%;
+    margin: 10px;
     text-align: center;
     color: white;
-    display: none;
+    float: right;
+/*    display: none;*/
 }
 
 #border{
@@ -97,17 +123,40 @@ form button{
     
 }
 
+img{
+    min-width: 500px;
+    min-height: 500px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+}
+
 label{
     text-transform: uppercase;
-    width: 265px;
-    margin: 10px;
+    width: 200px;
+    height: 30px;
+    margin: 5px;
     float: left;
     border-radius: 15px;
     border: 3px solid;
     text-align: center;
     align-content: center;
     background: white;
-    padding-top: 15px;
+/*    padding-top: 5px;*/
+    
+}
+
+#myCanvas{
+    background-image: url(../images/Beneco-1.jpg);
+        /* Full height */
+    height: 450px;
+    width: 500px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     
 }
 
@@ -115,32 +164,10 @@ input{
     display: none;
 }
 
-
-.map-box {
-    width: 60%;
-    margin: 0 auto;
-    height: 100%;
-}
-
-img{
-    padding-top: 10px;
-    width: 615px;
-}
-
 label:hover{
     border: 3px orange solid;
     background-color: gray;
 }
-
-
-.box{
-    float: left;
-    width: 45%;
-    display: none;
-    border: 3px black solid;
-    margin: 2px;
-}
-
 
 footer{
     background: orange;
@@ -148,14 +175,9 @@ footer{
     color: white;
     height: 50px;
     padding: 10px;
-    
+/*    padding-bottom: 15px;*/
+/*    padding-bottom: 15px;*/
 }
-
-
-
-
-/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
 
 #slideSection {
 	width:100%;
@@ -211,9 +233,10 @@ footer{
 #buttonPrev{
 	position:absoulte;
 	width:10%;
-	height:100%;
+	height: 452px;
 	float:left;
 	color:white;
+    text-align: center;
 	background-color:black;
 	opacity:0.7;
 }
@@ -221,8 +244,9 @@ footer{
 #buttonNext{
 	position:absoulte;
 	width:10%;
-	height:100%;
+	height: 452px;
 	float:right;
+    text-align: center;
 	color:white;
 	background-color:black;
 	opacity:0.7;
@@ -256,55 +280,61 @@ footer{
     .container form{
         width: 90%;   
     }
-    img{
-/*        padding-top: 50px;*/
-        width: 250px;
-        margin: 0;
-    }
-    
+
     form button{
         float: none;
-        width: 100%;
+        width: 100%;  
+    }
         
-        
+    footer{
+        display: block;
+/*        margin-top: 60%;*/
     }
     
-    #map .container{
-        margin: 0px;
-        padding: 0px;
-        width: 95%;
-        
+    #myCanvas{
+    width: 80%;
+    height: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
     }
     
     #map{
-        margin: 0px;
-        height: 210px;
-        padding: 0px;
-        position: 
-/*        padding-right: 30px;/ */
-/*        padding: 0px;*/
-        
-    }
-    
-    #mapPane {
-	width:100%;
-	background-color:white;
-/*	position:absolute;*/
-    position: relative;
-}
-
-    #addressPane {
-        width:100%;
-        height:5px;
-        margin: 0px;
         text-align: center;
-        background: orange;
+        border-right: none;
+        width: 100%;
+        height: 350px;
+        border-bottom: orange 3px solid;
     }
-    
-    footer{
-        margin-top: 60%;
+
+    #info{
+/*        background-color: #35424a;*/
+        width: 100%;
+        text-align: center;
+        color: white;
+        float: right;
+        display: block;
+    /*    display: none;*/
     }
-    
+    #content{
+    height: 800px;
+    background-color: darkgray;
+/*    text-align: center;*/
+    color: white;
+    border-bottom: orange 3px solid;
+    display: block;
+    }
+    body{
+        height: inherit;
+    }
+    #buttonPrev{
+        height: inherit;
+    }
+
+    #buttonNext{
+        height: inherit;
+    }
 
 }
 
