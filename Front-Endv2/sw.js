@@ -35,7 +35,9 @@ var cacheFiles = [
 				'images/icons/icon-192x192.png',
 				'images/icons/icon-384x384.png',
 				'images/icons/icon-512x512.png',
-				'manifest.json'
+				'manifest.json',
+				'script/location.json',
+				'object.json'
             ];
 
 /**

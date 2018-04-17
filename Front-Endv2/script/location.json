@@ -1,0 +1,23 @@
+locationE = [  
+	{"name":"Western Union - USSC", "address":"Second Floor, Abanao Sqaure, Baguio City","description":"Open Monday - Saturday 8:00AM - 5:00PM"},
+	{"name":"7-Eleven Abanao", "address":"Unit 2, Ong Building, Abanao Street, Baguio City","description":"Open 24 Hours"},
+	{"name":"7-Eleven Naguilian", "address":"Cor. BokaWkan Road, Naguilian, Baguio City","description":"Open 24 hours"},
+	{"name":"7-Eleven City Camp", "address":"Legarda Road, cor. City Camp, Baguio City","description":"Open 24 hours"},
+	{"name":"7-Eleven University of Baguio", "address":"FB Building, Assumption Road, Baguio City","description":"Open 24 hours"},
+	{"name":"Western Union - eBiz", "address":"Km. 5, La Trinidad, Benguet","description":"Open Monday - Saturday 8:00AM - 5:00PM"},
+	{"name":"Western Union - eBiz", "address":"J. De Leon Center, Upper Session Road, Baguio City","description":"Open Monday - Saturday 9:00AM - 7:00PM"},
+	{"name":"Summit Bank", "address":"Harrison Road, Baguio City","description":"Open Monday - Saturday 8:30AM - 4:30PM"},
+	{"name":"Summit Bank", "address":"Maharlika Building Branch, Baguio City","description":"Open Monday - Saturday 8:30AM - 4:30PM"}
+];
+
+locationW = [
+	{"name":"3rd Floor Abanao Square Mall", "address":"Abanao St, Baguio, 2600 Benguet","description":"Open Monday - Sunday 9:00AM - 8:00PM"},
+	{"name":"7 ELEVEN", "address":"Session Ground Floor B-15 Lopez Building","description":"Open 24 hours"},
+	{"name":"7 ELEVEN", "address":"Portavaga Father Carlu Street corner Cathedral Drive","description":"Open 24 hours"},
+	{"name":"Savevemore", "address":"Km.4 La Trinidad-Bontoc Road, La Trinidad, Baguio, 2601 Benguet","description":"Open Monday - Sunday 8:00AM - 8:00PM"}
+];
+
+locationI = [
+	{"name":"7 ELEVEN", "address":"Session Ground Floor B-15 Lopez Building","description":"Open 24 hours"},
+	{"name":"7 ELEVEN", "address":"Session Ground Floor B-15 Lopez Building","description":"Open 24 hours"},
+];

@@ -1,0 +1,42 @@
+	var name = document.createElement('h2');
+	var address = document.createElement('h3');
+	var description = document.createElement('h4');
+	var x,y,z = "";
+	var indeces = document.getElementsByClassName("locaE");
+	var indecws = document.getElementsByClassName("locaW");
+	var indecI = document.getElementsByClassName("locaI");
+	var umaewaShinderou  = document.createElement("br");
+
+	
+for(i in locationE){
+	var x = document.createTextNode(locationE[i].name);
+	var y = document.createTextNode(locationE[i].address);
+	var z = document.createTextNode(locationE[i].description);
+	indeces[i].appendChild(x);
+	indeces[i].appendChild(umaewaShinderou);
+	indeces[i].appendChild(y);
+	indeces[i].appendChild(umaewaShinderou);
+	indeces[i].appendChild(z);
+}
+
+for(i in locationW){
+	var x = document.createTextNode(locationW[i].name);
+	var y = document.createTextNode(locationW[i].address);
+	var z = document.createTextNode(locationW[i].description);
+	indecws[i].appendChild(x);
+	indecws[i].appendChild(umaewaShinderou);
+	indecws[i].appendChild(y);
+	indecws[i].appendChild(umaewaShinderou);
+	indecws[i].appendChild(z);
+}
+
+for(i in locationI){
+	var x = document.createTextNode(locationI[i].name);
+	var y = document.createTextNode(locationI[i].address);
+	var z = document.createTextNode(locationI[i].description);
+	indecI[i].appendChild(x);
+	indecI[i].appendChild(umaewaShinderou);
+	indecI[i].appendChild(y);
+	indecI[i].appendChild(umaewaShinderou);
+	indecI[i].appendChild(z);
+}
